@@ -1,4 +1,5 @@
 import React from 'react';
+
 import CountUp from 'react-countup';
 
 export default function Votes({ value, previous }) {

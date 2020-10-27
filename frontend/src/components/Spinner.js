@@ -1,4 +1,5 @@
 import React from 'react';
+
 import css from './spinner.module.css';
 
 export default function Spinner({ description }) {
@@ -17,9 +18,7 @@ export default function Spinner({ description }) {
           </div>
         </div>
       </div>
-      <div style={{ fontSize: '2em', fontWeight: 'bold', marginLeft: '15px' }}>
-        {description}
-      </div>
+      <div style={{ fontSize: '2rem', marginLeft: '10px' }}>{description}</div>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Percentage({ value, previous }) {
         start={previous || 0}
         end={value}
         duration={0.6}
-        decilmas={2}
+        decimals={2}
         decimal=","
         suffix="%"
       >

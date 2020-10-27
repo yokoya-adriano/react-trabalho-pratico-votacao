@@ -1,7 +1,8 @@
 import React from 'react';
-import Candidate from './Candidate';
-import Card from './Card';
 import FlipMove from 'react-flip-move';
+
+import Card from './Card';
+import Candidate from './Candidate';
 
 export default function Candidates({
   candidates,
@@ -14,12 +15,12 @@ export default function Candidates({
         {candidates.map((candidate, index) => {
           const { id } = candidate;
 
-          const previousVoteOjbect = previousVotes.find(
+          const previousVoteObject = previousVotes.find(
             (item) => item.id === id
           );
 
-          const previousVote = !!previousVoteOjbect
-            ? previousVoteOjbect.votes
+          const previousVote = !!previousVoteObject
+            ? previousVoteObject.votes
             : 0;
 
           const previousPercentageObject = previousPercentages.find(
@@ -27,7 +28,7 @@ export default function Candidates({
           );
 
           const previousPercentage = !!previousPercentageObject
-            ? previousPercentageObject.votes
+            ? previousPercentageObject.percentage
             : 0;
 
           return (
